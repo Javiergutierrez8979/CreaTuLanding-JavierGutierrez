@@ -1,0 +1,85 @@
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.item-card {
+  width: 300px;
+  height: 35rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #333;
+  margin: 0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.item-card img {
+  width: 100%;  /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: 17rem;  /* Ajusta la altura de la imagen */
+  object-fit: cover;  /* Asegura que la imagen cubra todo el espacio disponible sin distorsión */
+  border-radius: 8px; /* Mantén las esquinas redondeadas */
+}
+
+.item-card .item-text {
+  padding: 0.5rem;
+  color: #ddd;
+  border-radius: 4px;
+}
+
+.item-card h2, h3, .item-card p, .item-card .price {
+  color: #ddd; /* Texto en color claro para contraste */
+  margin: 0.5rem 0;
+}
+
+.item-card h3 {
+  font-size: 1.2rem;
+  color: #fff; /* Título en blanco */
+}
+
+.item-card .price {
+  font-weight: bold;
+  color: #fff; /* Precio en blanco */
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item-card .button {
+  margin: 10px 0; /* Espacio entre botones */
+  padding: 10px 20px; /* Espacio entre texto y botón */
+  background-color: #f5a623; /* Color de fondo del botón */
+  color: #fff; /* Texto del botón en blanco */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.item-card .button:hover {
+  background-color: #e59400;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.item-card .button:active {
+  background-color: #d68300;
+  transform: scale(0.98);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}

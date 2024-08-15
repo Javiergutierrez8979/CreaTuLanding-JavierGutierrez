@@ -1,0 +1,206 @@
+*{
+  
+  padding: 0;
+ margin: 0;
+}
+
+body {
+
+  background-color: black;
+}
+
+/* Styles for the "Productos" title */
+h2 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Styles for the category filter container */
+.category-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styles for the dropdown label */
+.category-filter label {
+  font-size: 1rem;
+  margin-right: 10px;
+  color: #555;
+}
+
+/* Styles for the dropdown menu */
+.category-filter select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+/* Add hover and focus effect for better UI */
+.category-filter select:hover,
+.category-filter select:focus {
+  border-color: #888;
+}
+
+
+.product-detail {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 90%;
+  z-index: 1000;
+}
+
+.product-detail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-detail h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.product-detail p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.close-btn {
+
+  background: #f00;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contacto-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #333; /* Dark background for consistency with cart */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow for depth */
+  color: #fff; /* White text to contrast against the dark background */
+}
+
+.contacto-page h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #f8f9fa; /* Light text for the title */
+  font-size: 2rem; /* Slightly larger title */
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #f8f9fa; /* Consistent light text for labels */
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #444; /* Darker border for input fields */
+  border-radius: 4px;
+  background-color: #222; /* Dark background for inputs */
+  color: #f8f9fa; /* Light text for input fields */
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745; /* Consistent green button color */
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+  box-shadow: 0 0 10px rgba(33, 136, 56, 0.8);
+}
+
+.product-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.product-detail h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.product-detail p {
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+/* styles/App.css */
+
+:root {
+  --navbar-footer-bg-color: #343a40; 
+}
+
+.navbar {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--navbar-footer-bg-color);
+}
+
+
+
+.footer {
+  background-color: var(--navbar-footer-bg-color);
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  color: #fff; /* Cambia el color del texto si es necesario */
+}
