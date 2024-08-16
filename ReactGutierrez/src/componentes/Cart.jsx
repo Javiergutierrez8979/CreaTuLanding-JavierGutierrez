@@ -1,9 +1,7 @@
-// componentes/Cart.jsx
 import React, { useContext, useState } from 'react';
 import { CartContext } from '../context/CartContext';
-import Swal from 'sweetalert2'; // Importa SweetAlert2
-import '../styles/Cart.css'; // Asegúrate de que el archivo de estilos esté en la ruta correcta
-
+import Swal from 'sweetalert2'; 
+import '../styles/Cart.css'; 
 const Cart = () => {
   const { cartItems, finalizePurchase } = useContext(CartContext);
   const [name, setName] = useState('');
@@ -26,9 +24,9 @@ const Cart = () => {
     }
 
     try {
-      await finalizePurchase(phone);
+      await finalizePurchase(name, phone);
 
-      // Muestra el mensaje de éxito sin el número de orden
+      // Muestra el mensaje de éxito
       Swal.fire({
         icon: 'success',
         title: 'Compra realizada con éxito!',

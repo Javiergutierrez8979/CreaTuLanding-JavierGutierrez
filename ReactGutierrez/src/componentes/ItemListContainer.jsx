@@ -1,21 +1,19 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../context/CartContext';
-import Item from '../componentes/Item'; // Asegúrate de tener este componente
-import CategoryFilter from '../componentes/CategoryFilter'; // Importa el filtro de categorías
+import Item from '../componentes/Item';
+import CategoryFilter from '../componentes/CategoryFilter';
 
 const ItemListContainer = () => {
   const { productos } = useContext(CartContext);
   const [filteredProductos, setFilteredProductos] = useState(productos);
 
-  // Actualiza los productos filtrados cada vez que cambien los productos
   useEffect(() => {
     setFilteredProductos(productos);
   }, [productos]);
 
-  // Función para actualizar los productos filtrados
   const handleFilterChange = (selectedCategory) => {
     if (selectedCategory === '') {
-      setFilteredProductos(productos); // Mostrar todos los productos si la categoría es vacía
+      setFilteredProductos(productos);
     } else {
       const filtered = productos.filter(producto => producto.categoria === selectedCategory);
       setFilteredProductos(filtered);
@@ -24,7 +22,7 @@ const ItemListContainer = () => {
 
   return (
     <div className="item-list-container">
-      <CategoryFilter onFilterChange={handleFilterChange} /> {/* Pasar la función de actualización */}
+      <CategoryFilter onFilterChange={handleFilterChange} />
       <div className="item-list">
         {filteredProductos.length > 0 ? (
           filteredProductos.map((producto) => (
